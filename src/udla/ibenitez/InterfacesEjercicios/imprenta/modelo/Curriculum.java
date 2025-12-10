@@ -13,9 +13,9 @@ public class Curriculum extends Hoja{
     @Override
     public String Imprimir() {
         StringBuilder sbuilder = new StringBuilder();
-        sbuilder.append(this.persona).append("\n")
+        sbuilder.append("Nombre: ").append(this.persona).append("\n")
+                .append("Profesión: ").append(this.carreraPersona).append("\n")
                 .append("Resumen: ").append(this.contenido).append("\n")
-                .append("Profesión").append(this.carreraPersona).append("\n")
                 .append("\n");
         for(String  exp : this.experienciaPersona){
             sbuilder.append("- ").append(exp).append("\n");
@@ -24,7 +24,7 @@ public class Curriculum extends Hoja{
     }
 
     /**Importar constructor de la clase abstract*/
-    public Curriculum(String contenido, String persona, String carreraPersona) {
+    public Curriculum(String persona, String carreraPersona,String contenido) {
         super(contenido);
         this.persona=persona;
         this.carreraPersona=carreraPersona;

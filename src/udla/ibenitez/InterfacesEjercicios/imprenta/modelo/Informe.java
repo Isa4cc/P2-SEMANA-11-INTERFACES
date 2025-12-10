@@ -15,8 +15,7 @@ public class Informe extends Hoja {
     /**Herencia del metodo abstract*/
     @Override
     public String Imprimir() {
-        return "Informe escrito por : " + this.autor + "\n" +
-                "Revisado por: " + this.revisor + "\n" +
-                this.contenido;
+        return this.contenido + "\n" + "Informe escrito por : " + this.autor + "\n" +
+                "Revisado por: " + this.revisor + "\n";
     }
 }
